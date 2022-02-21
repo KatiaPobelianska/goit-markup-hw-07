@@ -45,8 +45,8 @@ button {
 }
 ul {
   list-style: none;
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
 }
 /* --------------------------------- */
 
@@ -63,12 +63,13 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   text-decoration: none;
+
+  letter-spacing: 0.03em;
 }
 .color {
   color: var(--accent-color);
-  /* letter-spacing: 0.03em; */
+  letter-spacing: 0.03em;
 }
 .main-nav {
   margin-left: 93px;
@@ -152,7 +153,7 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background: var(--secondary-dark-color);
+  background-color: var(--secondary-dark-color);
 }
 /* Overlay */
 .overlay {
@@ -207,8 +208,7 @@ ul {
 }
 .features-title,
 .service-title,
-.team-title,
-.clients-title {
+.team-title {
   text-align: center;
 
   color: var(--title-text-color);
@@ -247,7 +247,7 @@ ul {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
 .features-list .title {
@@ -290,7 +290,7 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(47, 48, 58, 0.8);
+  background-color: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-bottom: 27px;
   text-align: center;
@@ -351,10 +351,10 @@ ul {
   padding-left: 0;
   justify-content: center;
 }
-.connect-item + .connect-item {
+.item-connect + .item-connect {
   margin-left: 10px;
 }
-.connect-item-link {
+.item-connect-link {
   width: 44px;
   height: 44px;
   background-color: #ffffff;
@@ -372,12 +372,12 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.connect-item-link:hover,
-.connect-item-link:focus {
+.item-connect-link:hover,
+.item-connect-link:focus {
   background-color: var(--accent-color);
 }
-.connect-item-link:hover .connect-link,
-.connect-item-link:focus .connect-link {
+.item-connect-link:hover .connect-link,
+.item-connect-link:focus .connect-link {
   fill: #ffffff;
 }
 
@@ -386,10 +386,13 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients-title {
+.title-clients {
+  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 50px;
@@ -397,6 +400,7 @@ ul {
 .clients-list {
   list-style: none;
   display: flex;
+  padding-left: 0;
   justify-content: center;
 }
 .clients-item {
@@ -433,6 +437,7 @@ ul {
 }
 
 /* PORTFOLIO */
+
 .filters {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -501,9 +506,11 @@ ul {
   position: relative;
   overflow: hidden;
 }
+
 .img {
   display: block;
 }
+
 .message {
   position: absolute;
   top: 0;
@@ -543,6 +550,7 @@ ul {
 /* --------------------------------- */
 
 /* Footer */
+
 .footer {
   background-color: var(--secondary-dark-color);
   padding-top: 60px;
@@ -616,6 +624,7 @@ ul {
 .follow-list-item + .follow-list-item {
   margin-left: 10px;
 }
+
 .follow-link {
   width: 44px;
   height: 44px;
@@ -690,7 +699,7 @@ ul {
 .backdrop {
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   transition: opacity 250ms, visibility 250ms;
@@ -701,7 +710,7 @@ ul {
 .modal {
   width: 528px;
   min-height: 581px;
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -827,7 +836,7 @@ ul {
   background-size: cover;
   border: none;
 }
-.vipsually-hidden {
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
