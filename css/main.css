@@ -212,8 +212,8 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  cursor: pointer;
   letter-spacing: 0.06em;
+  cursor: pointer;
   text-align: center;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
@@ -246,7 +246,7 @@ ul {
   display: flex;
 }
 
-.features {
+.features-item {
   width: 270px;
 }
 
@@ -444,16 +444,16 @@ ul {
   border: 1px solid var(--accent-color);
 }
 
-.clients-item-link:hover .clients-link,
-.clients-item-link:focus .clients-link {
-  fill: var(--accent-color);
-}
-
 .clients-link {
   fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-item-link:hover .clients-link,
+.clients-item-link:focus .clients-link {
+  fill: var(--accent-color);
 }
 
 .filters {

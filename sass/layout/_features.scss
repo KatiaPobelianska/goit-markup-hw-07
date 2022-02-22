@@ -1,12 +1,12 @@
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.features-list {
-  display: flex;
-}
-.features-item {
-  width: 270px;
+  &-list {
+    display: flex;
+  }
+  &-item {
+    width: 270px;
+  }
 }
 .features-list .features-item + .features-item {
   margin-left: 30px;
@@ -23,7 +23,6 @@
 }
 .features-list .title {
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -33,7 +32,6 @@
 }
 .features-list .text {
   color: var(--primary-text-color);
-
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
