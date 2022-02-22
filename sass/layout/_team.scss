@@ -1,0 +1,73 @@
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &-list {
+    display: flex;
+    text-align: center;
+  }
+  &-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+.team-list .team-item + .team-item {
+  margin-left: 30px;
+}
+.common {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: var(--primary-white-color);
+}
+.team-list .name {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.team-list .job {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.connect {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+}
+.item-connect + .item-connect {
+  margin-left: 10px;
+}
+.item-connect-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.connect-link {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.item-connect-link:hover .connect-link,
+.item-connect-link:focus .connect-link {
+  fill: #ffffff;
+}
