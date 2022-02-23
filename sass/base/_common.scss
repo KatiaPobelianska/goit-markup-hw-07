@@ -8,10 +8,11 @@ header {
   border-bottom: 1px solid #ececec;
 }
 h1 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
+  @include font(900, 44px, 1.4, 0.06em);
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.4;
+  // letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-right: auto;
   margin-left: auto;
@@ -30,9 +31,10 @@ ul {
 .title-clients {
   text-align: center;
   color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include font(700, 36px, 1.17, 0.03em);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.17;
+  // letter-spacing: 0.03em;
   margin-bottom: 50px;
 }

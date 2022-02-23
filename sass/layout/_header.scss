@@ -5,12 +5,12 @@
 .logo {
   font-family: Raleway;
   color: var(--primary-dark-color);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  @include font(700, 26px, 1.2, 0.03em);
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.2;
+  // letter-spacing: 0.03em;
   text-decoration: none;
-
-  letter-spacing: 0.03em;
 }
 .color {
   color: var(--accent-color);
@@ -31,15 +31,17 @@
   padding-top: 32px;
 
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(500, 14px, 1.14, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
   text-decoration: none;
-  letter-spacing: 0.02em;
   position: relative;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include time;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover::after {
     display: block;
   }
@@ -74,14 +76,16 @@
   display: flex;
   text-align: center;
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, 14px, 1.14, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
   text-decoration: none;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include time;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-nav .auth-link:hover,
 .auth-nav .auth-link:focus {

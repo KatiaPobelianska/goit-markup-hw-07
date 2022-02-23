@@ -16,16 +16,17 @@
     min-width: 130px;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
+    @include font(700, 16px, 1.9, 0.06em);
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.9;
+    // letter-spacing: 0.06em;
     cursor: pointer;
     text-align: center;
     transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include time;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       color: var(--primary-white-color);

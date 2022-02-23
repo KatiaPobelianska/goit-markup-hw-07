@@ -23,8 +23,9 @@
   align-items: center;
   justify-content: center;
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include time;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
@@ -33,8 +34,9 @@
 .clients-link {
   fill: #afb1b8;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include time;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item-link:hover .clients-link,
 .clients-item-link:focus .clients-link {
