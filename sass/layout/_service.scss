@@ -1,17 +1,17 @@
 .service {
   padding-bottom: 94px;
-  &-list {
-    display: flex;
-  }
-  &-item {
+}
+.service-list {
+  display: flex;
+  &__item {
     position: relative;
   }
+  &__img {
+    display: block;
+  }
 }
-.service-list .service-item + .service-item {
+.service-list .service-list__item + .service-list__item {
   margin-left: 30px;
-}
-.profit-img {
-  display: block;
 }
 .profit {
   width: 370px;
@@ -23,14 +23,14 @@
   padding-top: 27px;
   padding-bottom: 27px;
   text-align: center;
-}
-.service-text {
-  @include font(700, 14px, 1.14, 0.03em);
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
+  &__text {
+    @include font(700, 14px, 1.14, 0.03em);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+  }
 }
